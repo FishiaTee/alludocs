@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../../reference/item/">
       
       
         <link rel="next" href="../tags/">
@@ -251,6 +251,74 @@
       
   
   
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    API Reference
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            API Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/item/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Item
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -264,10 +332,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -280,8 +348,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Items
           </label>
@@ -570,10 +638,8 @@
 <div class="language-csharp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">Item</span><span class="p">.</span><span class="n">SetModel</span><span class="p">(</span><span class="n">str</span><span class="w"> </span><span class="n">model</span><span class="p">,</span><span class="w"> </span><span class="n">str</span><span class="w"> </span><span class="n">texture</span><span class="p">);</span>
 </span></code></pre></div>
 <p>The game takes models from <code>res/models</code> and textures from <code>res/textures</code>. Basically, a 3D model consists of two elements: the shape (model) and the texture.</p>
-<div class="language-csharp highlight"><span class="filename">Example</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// Register the item</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">Item</span><span class="w"> </span><span class="n">obsidian_sword</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Item</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">144</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;obsidian_sword&quot;</span><span class="p">);</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1">// Set a 3D hand model</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">obsidian_sword</span><span class="p">.</span><span class="n">SetModel</span><span class="p">(</span><span class="s">&quot;item.sword&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;item.obsidian_sword&quot;</span><span class="p">);</span>
+<div class="language-csharp highlight"><span class="filename">Example</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// Register the item and set a hand model</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">Item</span><span class="w"> </span><span class="n">obsidian_sword</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Item</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">144</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;obsidian_sword&quot;</span><span class="p">).</span><span class="n">SetModel</span><span class="p">(</span><span class="s">&quot;item.sword&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;item.obsidian_sword&quot;</span><span class="p">);</span>
 </span></code></pre></div>
 <p>We use the <code>sword</code> base model from <code>res/models/item/sword.json</code>, and apply our texture from <code>res/textures/item/obsidian_sword.png</code>.</p>
 <h2 id="stack-size">Stack Size</h2>
@@ -588,10 +654,8 @@
 <p>A <abbr title="PocketBlocks.Items.ItemTagTypes.ItemTagEntry">TagEntry</abbr> consists of a <abbr title="PocketBlocks.Items.ItemTagTypes.ItemTag">Tag</abbr>, and its integer value. All tags have a value assigned to it, and this value determines the effectiveness of said tags.</p>
 <div class="language-csharp highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">ItemTagEntry</span><span class="w"> </span><span class="n">tag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ItemTagEntry</span><span class="p">(</span><span class="n">ItemTag</span><span class="w"> </span><span class="n">tag</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="k">value</span><span class="p">);</span>
 </span></code></pre></div>
-<div class="language-csharp highlight"><span class="filename">Example</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1">// Register the item</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">Item</span><span class="w"> </span><span class="n">cool_pickaxe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Item</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="mi">192</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;obsidian_sword&quot;</span><span class="p">);</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="c1">// Assign it a tag (pickaxe power)</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">cool_pickaxe</span><span class="p">.</span><span class="n">AddTag</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">ItemTagEntry</span><span class="p">(</span><span class="n">ItemTag</span><span class="p">.</span><span class="n">pickaxe</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">));</span>
+<div class="language-csharp highlight"><span class="filename">Example</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1">// Register the item and assign it the &quot;pickaxe_power&quot; tag</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">Item</span><span class="w"> </span><span class="n">cool_pickaxe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Item</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="mi">192</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;obsidian_sword&quot;</span><span class="p">).</span><span class="n">AddTag</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">ItemTagEntry</span><span class="p">(</span><span class="n">ItemTag</span><span class="p">.</span><span class="n">pickaxe</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">));;</span>
 </span></code></pre></div>
 <p>In the above example, we assigned a <abbr title="PocketBlocks.Items.ItemTagTypes.ItemTag">Tag</abbr> (<code>ItemTag.pickaxe</code>) which in turns assigns the <abbr title="PocketBlocks.Items.Item">Item</abbr> <code>cool_pickaxe</code> a pickaxe power of 8.</p>
 <p>Tags are powerful, and can be used to do various things. More information about it can be found in its dedicated <a href="../tags/">Tags section</a>.</p>
@@ -657,7 +721,7 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "content.code.copy"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "content.code.copy", "content.tooltips"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
