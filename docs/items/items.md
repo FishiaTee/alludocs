@@ -70,7 +70,33 @@ cool_pickaxe.AddTag(new ItemTagEntry(ItemTag.pickaxe, 8));
 
 In the above example, we assigned a Tag (`ItemTag.pickaxe`) which in turns assigns the Item `cool_pickaxe` a pickaxe power of 8.
 
-Tags are powerful, and can be used to do various things. More information about it can be found in its dedicated [Tags section](items/tags.md).
+Tags are powerful, and can be used to do various things. More information about it can be found in its dedicated [Tags section](tags.md).
+
+## Translations
+
+For an Item to have a proper localized name, it is necessary to add a translation entry for it.
+
+To do so, add an entry to `res/translations/en_au.txt`.
+
+```
+item.<string ID> <localized name>
+```
+
+If you want your Item to have a description, add another entry.
+
+```
+item.<string ID>.desc <description>
+```
+
+``` title="Example"
+item.cool_pickaxe Cool Pickaxe
+item.obsidian_sword Obsidian Sword
+item.obsidian_sword.desc The most powerful sword in the game.
+```
+
+## Advanced Behavior
+
+Using basic Item registration and only the default tags could only get you so far, for more advanced items please see its own [dedicated section](advanced.md).
 
 *[Item]: PocketBlocks.Items.Item
 *[Tag]: PocketBlocks.Items.ItemTagTypes.ItemTag

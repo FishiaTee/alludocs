@@ -31,5 +31,6 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Items:
-    - Basics: items.md
+    - Basics: items/items.md
     - Tags: items/tags.md
+    - Advanced: items/advanced.md

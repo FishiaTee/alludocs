@@ -22,7 +22,7 @@ The game has quite a few set of default tags for various properties.
 | String ID | Internal | Description |
 | --------- | -------- | ----------- |
 | can_place | `ItemTag.can_place` | Used for Block, determine whether or not the Item can be placed. |
-| can_consume | `ItemTag.can_consume` | Whether or not the Player can consume the Item. |
+| can_consume | `ItemTag.can_consume` | Whether or not the Item is a consumable. |
 | cant_mine | `ItemTag.cant_mine` | Whether or not the Item can be used to mine Block. |
 | axe_power | `ItemTag.axe` | Whether or not the Item is an axe, and the power of it. |
 | hammer | `ItemTag.hammer` | Whether or not the Item is a hammer. |
