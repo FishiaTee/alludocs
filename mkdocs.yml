@@ -17,6 +17,7 @@ theme:
   features:
     - search.suggest
     - content.code.copy
+    - content.tooltips
 markdown_extensions:
   - admonition
   - abbr
@@ -27,10 +28,14 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.details
   - tables
 nav:
   - Home: index.md
+  - API Reference:
+    - Item: reference/item.md
   - Items:
     - Basics: items/items.md
     - Tags: items/tags.md
     - Advanced: items/advanced.md
+  

@@ -29,10 +29,8 @@ Item.SetModel(str model, str texture);
 The game takes models from `res/models` and textures from `res/textures`. Basically, a 3D model consists of two elements: the shape (model) and the texture.
 
 ```csharp title="Example"
-// Register the item
-Item obsidian_sword = new Item(0, 144, "obsidian_sword");
-// Set a 3D hand model
-obsidian_sword.SetModel("item.sword", "item.obsidian_sword");
+// Register the item and set a hand model
+Item obsidian_sword = new Item(0, 144, "obsidian_sword").SetModel("item.sword", "item.obsidian_sword");
 ```
 
 We use the `sword` base model from `res/models/item/sword.json`, and apply our texture from `res/textures/item/obsidian_sword.png`.
@@ -62,10 +60,8 @@ ItemTagEntry tag = new ItemTagEntry(ItemTag tag, int value);
 ```
 
 ```csharp title="Example"
-// Register the item
-Item cool_pickaxe = new Item(16, 192, "obsidian_sword");
-// Assign it a tag (pickaxe power)
-cool_pickaxe.AddTag(new ItemTagEntry(ItemTag.pickaxe, 8));
+// Register the item and assign it the "pickaxe_power" tag
+Item cool_pickaxe = new Item(16, 192, "obsidian_sword").AddTag(new ItemTagEntry(ItemTag.pickaxe, 8));;
 ```
 
 In the above example, we assigned a Tag (`ItemTag.pickaxe`) which in turns assigns the Item `cool_pickaxe` a pickaxe power of 8.
