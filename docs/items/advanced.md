@@ -1,8 +1,5 @@
 # Advanced Items
 
-!!! danger "Note"
-    This section is work-in-progress. 
-
 ## The Item class
 
 The base Item instance will suffice for basic item types such as food or tools, however to have more advanced behavior, you have to make your own extended Item class.
@@ -73,10 +70,28 @@ Events are a way of referring to the virtual methods provided by the base Item c
 | `bool CanConsume(PlayerEntity player)` | Whether or not the player can consume the Item. |
 | `void OnHitEntity(PlayerEntity player, Entity entity)` | When the Player hits an Entity. |
 
-## Examples
+## Example(s)
 
-*to be written*
+```csharp title="Example"
+class CustomItem : Item
+{
+    public CustomItem(int x, int y, string stringId) : base(x, y, stringId) {
+    }
 
+    public override void OnUse(PlayerEntity player, World world) {
+        // Run the original virtual method
+        base.OnUse(player, world);
+        // Print "Hello, world!" to chat log
+        ChatLog.PushFromPlayer("Hello, world!");
+    }
+}
+```
+
+The above example is an Item that upon use, will print a chat message "Hello, world!". After writing your custom Item class, register your Item using said class.
+
+```csharp title="Example"
+Item helloWorldItem = new CustomItem(0, 16, "hello_world_item");
+```
 
 *[Item]: PocketBlocks.Items.Item
 *[Tag]: PocketBlocks.Items.ItemTagTypes.ItemTag
