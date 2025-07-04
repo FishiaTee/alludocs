@@ -11,7 +11,9 @@ Represents an item.
 public Item(int textureX, int textureY, string stringId)
 ```
 
-??? info "Parameters"
+??? info
+    Registers an item.
+
     | Name | Description |
     | ---- | ----------- |
     | int textureX | X coordinate of the item texture (in the atlas) |
@@ -22,7 +24,9 @@ public Item(int textureX, int textureY, string stringId)
 public Item(Block block)
 ```
 
-??? info "Parameters"
+??? info
+    Registers an item representing a block.
+    
     | Name | Description |
     | ---- | ----------- |
     | Block block | Block being represented |

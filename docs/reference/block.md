@@ -11,7 +11,9 @@ Represents a block.
 public Block(string stringId)
 ```
 
-??? info "Parameters"
+??? info
+    Registers a block.
+    
     | Name | Description |
     | ---- | ----------- |
     | string stringId | String identifier of the block |
