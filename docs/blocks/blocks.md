@@ -3,8 +3,7 @@
 !!! danger "Note"
     This section is work-in-progress.
 
-Blocks are internally identified by numeric IDs, and are registered by
-creating `Block` instance:
+Blocks are internally identified by numeric IDs, and are registered by creating a `Block` instance:
 
 ```csharp
 Block block = new Block(string strID);

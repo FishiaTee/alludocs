@@ -34,8 +34,12 @@ nav:
   - Home: index.md
   - API Reference:
     - Item: reference/item.md
+    - Block: reference/block.md
   - Items:
     - Basics: items/items.md
     - Tags: items/tags.md
     - Advanced: items/advanced.md
-  
+  - Blocks:
+    - Basics: blocks/blocks.md
+    - Materials: blocks/materials.md
+    - Models: blocks/models.md
